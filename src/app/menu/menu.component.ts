@@ -26,7 +26,7 @@ export class MenuComponent {
 
   menuClick() {
     //mecanismo de abrir e fechar!
-    this.menuStatus = (this.menuStatus === 'open' ? 'closed' : 'open');
+    this.menuStatus = (this.menuStatus == 'open') ? 'closed' : 'open';
 
   }
 

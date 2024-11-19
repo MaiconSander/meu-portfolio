@@ -6,27 +6,27 @@ nav {
     display: flex;
     align-items: center;
     justify-content: right;
-    right: 70px;
+    height: 70px;
 }
 
 nav ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     list-style: none;
+    flex-direction: column;
     position: absolute;
-    top: 70%;
+    top: 70px;
     background: #fff;
     width: 100%;
 }
 
+nav ul.closed {
+    display: none;
+ }
+
 nav ul.open {
     display: flex;
-}
-
-nav ul.closed {
-   display: none;
 }
 
 nav ul li {
