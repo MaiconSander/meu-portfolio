@@ -11,10 +11,12 @@ import { Profile } from '../models/profile';
 })
 export class HomeComponent {
 
+  constructor(private profileService: ProfileService) { }
+
   profile!: Profile;
 
   ngOnInit() {
-    this.profile = new ProfileService().getProfile();
+    this.profile = this.profileService.getProfile();
   }
 
 }
